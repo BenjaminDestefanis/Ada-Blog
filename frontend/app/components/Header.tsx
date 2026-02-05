@@ -13,7 +13,7 @@ export default async function Header() {
         <div className="flex items-center justify-between gap-5">
           <Link className="flex items-center gap-2" href="/">
             <span className="text-lg sm:text-2xl pl-2 font-semibold">
-              {settings?.title || 'Sanity + Next.js'}
+              {settings?.title || 'Ada Devs School'}
             </span>
           </Link>
 
@@ -25,6 +25,24 @@ export default async function Header() {
               <li>
                 <Link href="/about" className="hover:underline">
                   About
+                </Link>
+              </li>
+
+              <li>
+                <Link href="/" className="hover:underline">
+                  Cursos
+                </Link>
+              </li>
+
+              <li>
+                <Link href="/" className="hover:underline">
+                  Clases
+                </Link>
+              </li>
+
+              <li>
+                <Link href="/" className="hover:underline">
+                  Contacto
                 </Link>
               </li>
 
