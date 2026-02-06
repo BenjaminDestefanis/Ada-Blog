@@ -150,7 +150,7 @@ export function PageOnboarding() {
           description: 'Get started by creating an about page.',
         }}
         link={{
-          title: 'Create Page',
+          title: 'Create Pages',
           href: `${studioUrl}/structure/intent/create/template=page;type=page;path=name`,
         }}
         type="page"

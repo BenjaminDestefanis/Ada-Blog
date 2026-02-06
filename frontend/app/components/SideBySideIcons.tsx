@@ -1,8 +1,14 @@
+
+import Image from "next/image"
+
 export default function SideBySideIcons() {
   return (
     <div className="relative flex gap-[0] -mt-16 group">
-      <div className="z-10 aspect-square w-32 h-32 flex justify-center items-center rounded-full border-white border-4 bg-white transform translate-x-2 group-hover:scale-110 group-hover:-translate-x-5 transition-all duration-300">
-        <svg
+
+
+      {/* Codigo anterior */}
+      {/* <div className="z-10 aspect-square w-32 h-32 flex justify-center items-center rounded-full border-white border-4 bg-white transform translate-x-2 group-hover:scale-110 group-hover:-translate-x-5 transition-all duration-300"> */}
+         {/* <svg
           className="w-full duration-300 transition"
           viewBox="0 0 400 400"
           fill="none"
@@ -18,16 +24,46 @@ export default function SideBySideIcons() {
           </g>
           <defs>
             <clipPath id="a">
-              <path fill="#fff" transform="translate(85 105)" d="M0 0h230.517v191H0z" />
+              <path fill="#000" transform="translate(85 105)" d="M0 0h230.517v191H0z" />
             </clipPath>
-          </defs>
-        </svg>
-      </div>
+          </defs> 
+        </svg>  */}
+
+
+         <div className="z-10 aspect-square w-32 h-32 flex justify-center items-center rounded-full border-black border-4 bg-white transform translate-x-2 group-hover:scale-110 group-hover:-translate-x-5 transition-all duration-300">
+          <Image
+            src="/programing-book.svg"
+            alt="Logo"
+            width={100}
+            height={100}
+            className="transition duration-300"
+          />
+        </div>
+
+
+      {/* Codigo anterior */}
+      {/* </div> */}
+
       <div className="text-black opacity-0 text-4xl scale-50 font-bold absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 ease-in-out">
         +
       </div>
-      <div className="aspect-square w-32 h-32 border-white border-4 flex justify-center items-center rounded-full transform -translate-x-2 group-hover:scale-110 group-hover:translate-x-5 transition-all duration-300">
-        <svg
+
+
+      <div className="aspect-square w-32 h-32 border-black border-4 bg-white flex justify-center items-center rounded-full transform -translate-x-2 group-hover:scale-110 group-hover:translate-x-5 transition-all duration-300">
+
+
+        {/* <div className="z-10 aspect-square w-32 h-32 flex justify-center items-center rounded-full border-black border-4 bg-white transform translate-x-2 group-hover:scale-110 group-hover:-translate-x-5 transition-all duration-300"> */}
+          <Image
+            src="/language.svg"
+            alt="Logo"
+            width={100}
+            height={100}
+            className="transition duration-300"
+          />
+        {/* </div> */}
+
+
+        {/* <svg
           className="w-full duration-300 transition"
           viewBox="0 0 180 180"
           fill="none"
@@ -76,7 +112,9 @@ export default function SideBySideIcons() {
               <stop offset="1" stopColor="white" stopOpacity="0" />
             </linearGradient>
           </defs>
-        </svg>
+        </svg> */}
+
+
       </div>
     </div>
   )
