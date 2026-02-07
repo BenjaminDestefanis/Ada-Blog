@@ -54,7 +54,7 @@ export default function SideBySideIcons() {
 
         {/* <div className="z-10 aspect-square w-32 h-32 flex justify-center items-center rounded-full border-black border-4 bg-white transform translate-x-2 group-hover:scale-110 group-hover:-translate-x-5 transition-all duration-300"> */}
           <Image
-            src="/language.svg"
+            src="/leng.svg"
             alt="Logo"
             width={100}
             height={100}

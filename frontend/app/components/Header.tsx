@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import {settingsQuery} from '@/sanity/lib/queries'
 import {sanityFetch} from '@/sanity/lib/live'
+import Image from 'next/image';
 
 export default async function Header() {
   const {data: settings} = await sanityFetch({
@@ -13,7 +14,23 @@ export default async function Header() {
         <div className="flex items-center justify-between gap-5">
           <Link className="flex items-center gap-2" href="/">
             <span className="text-lg sm:text-2xl pl-2 font-semibold">
-              {settings?.title || 'Ada Devs School'}
+              
+            <div className='flex items-center'>
+              <Image 
+                src="/logo.svg"
+                alt="Logo"
+                width={80}
+                height={80}
+                className="transition duration-300" 
+              />  
+              <span className='font-bold'>
+              {settings?.title || 'ADA Academy'}  
+              </span>
+              
+
+               
+            </div>       
+            
             </span>
           </Link>
 
