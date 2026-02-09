@@ -65,6 +65,12 @@ export default async function Header() {
 
               <li>
                 <Link href="/" className="hover:underline">
+                 Estudios 
+                </Link>
+              </li>
+
+              <li>
+                <Link href="/" className="hover:underline">
                   Contacto
                 </Link>
               </li>
