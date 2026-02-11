@@ -8,6 +8,7 @@ import {GetPageQueryResult} from '@/sanity.types'
 import {dataAttr} from '@/sanity/lib/utils'
 import {PageBuilderSection} from '@/sanity/lib/types'
 
+
 type PageBuilderPageProps = {
   page: GetPageQueryResult
 }

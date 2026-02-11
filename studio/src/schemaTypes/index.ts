@@ -8,8 +8,11 @@ import {link} from './objects/link'
 import {blockContent} from './objects/blockContent'
 import button from './objects/button'
 import {blockContentTextOnly} from './objects/blockContentTextOnly'
+import courseCardSection from './objects/courseCardSection'
 
 // Export an array of all the schema types.  This is used in the Sanity Studio configuration. https://www.sanity.io/docs/studio/schema-types
+
+// Aqui se exportan los objetos-Esquemas que maneja Sanity Studio
 
 export const schemaTypes = [
   // Singletons
@@ -25,4 +28,5 @@ export const schemaTypes = [
   infoSection,
   callToAction,
   link,
+  courseCardSection,
 ]

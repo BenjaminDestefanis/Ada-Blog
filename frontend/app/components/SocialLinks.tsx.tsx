@@ -59,7 +59,7 @@ export default function SocialLinks() {
               <span className="relative z-10">
                 <FontAwesomeIcon icon={social.icon} className="w-7 h-7" />
               </span>
-              
+              {/*  */}
               {/* Efecto de llenado de fondo */}
               <div className="absolute inset-x-0 top-full bottom-0 bg-[var(--bg)] transition-all duration-300 
                 group-hover:top-0 group-focus-visible:top-0" />
